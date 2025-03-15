@@ -1,6 +1,6 @@
 ---
-title: Open WebUI and Open AI
-permalink: /open-webui-and-open-ai
+title: Open WebUI and OpenAI
+permalink: /open-webui-and-openai
 layout: post
 date: 2025-03-15
 category: post
@@ -14,7 +14,7 @@ Recently I watched Network Chuck's [excellent video about Open WebUI and LiteLLM
 
 In Network Chuck's video he sets up Open WebUI and Ollama on a cloud VPS, which I don't want to do at the moment. I've already got a homelab server that I use to locally self-host a number of services, so I went in search of a Docker Compose file that I could use to set up just Open WebUI on that server. Luckily Network Chuck's second channel has a video where [he does just that](https://www.youtube.com/watch?v=JJ_0-pAOIEk).
 
-You could do this on any machine that has Docker installed. Here's the `docker-compose.yml` file that I used:
+You could do this on any machine that has Docker installed. Here's the `docker-compose.yml` file that I used, almost verbatim from Network Chuck's video:
 
 ```yaml
 services:
@@ -24,7 +24,7 @@ services:
       # Change port 3104 to whatever port you need
       - 3104:8080
     volumes:
-      - ./open-webui:/app/backend/data
+      - ./data:/app/backend/data
 ```
 
 After running `docker compose up -d` and hitting `myserver:3104` I got Open WebUI's (very pretty) landing page. From there I created my admin account.
