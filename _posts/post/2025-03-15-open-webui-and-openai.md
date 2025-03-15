@@ -8,11 +8,11 @@ category: post
 
 I use ChatGPT a lot (as any good information worker should :-s ), but I wanted to use different models and do some experimenting with local models.
 
-Note that although setting up Open WebUI on a local server is *free*, using OpenAI's API isn't, but it should hopefully be cheaper than paying for a ChatGPT subscription, and it's much more flexible - you can hook it up to Claude or Gemini or local models, although that's outside the scope of this post.
+Note that although setting up [Open WebUI](https://openwebui.com/) on a local server is *free*, using OpenAI's API isn't, but it should hopefully be cheaper than paying for a ChatGPT subscription, and it's much more flexible - you can hook it up to Claude or Gemini or local models using [LiteLLM](https://docs.litellm.ai/docs/proxy/deploy) (described in NC's video below), although that's outside the scope of this post.
 
 Recently I watched Network Chuck's [excellent video about Open WebUI and LiteLLM](https://www.youtube.com/watch?v=nQCOTzS5oU0) which clued me onto setting up Open WebUI and using OpenAI's API directly, instead of having to pay $20 USD a month for a paid ChatGPT subscription.
 
-In Network Chuck's video he sets up Open WebUI and Ollama on a cloud VPS, which I don't want to do at the moment. I've already got a homelab server that I use to locally self-host a number of services, so I went in search of a Docker Compose file that I could use to set up just Open WebUI on that server. Luckily Network Chuck's second channel has a video where [he does just that](https://www.youtube.com/watch?v=JJ_0-pAOIEk).
+In Network Chuck's video he sets up Open WebUI and [Ollama](https://ollama.com/) on a cloud VPS, which I don't want to do at the moment. I've already got a homelab server that I use to locally self-host a number of services, so I went in search of a Docker Compose file that I could use to set up just Open WebUI on that server. Luckily Network Chuck's second channel has a video where [he does just that](https://www.youtube.com/watch?v=JJ_0-pAOIEk).
 
 You could do this on any machine that has Docker installed. Here's the `docker-compose.yml` file that I used, almost verbatim from Network Chuck's video:
 
