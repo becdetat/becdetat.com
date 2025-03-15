@@ -35,10 +35,10 @@ I added $5 USD to my account, went to Settings, then API keys, and created an AP
 
 Then back in Open WebUI I went to Settings, Admin Settings, Connections, and then added the API key to the OpenAI API connection, and saved. It ended up looking like this:
 
-![Open WebUI settings](images/2025-03-15-open-webui-and-open-ai/open-webui-settings.png)
+![Open WebUI settings](/images/2025-03-15-open-webui-and-openai/open-webui-settings.png)
 
 Then I started a chat, picked a model, and gave it a run over a file from a project I work on, to see how well it could analyse the file and give some suggestions for improvement.
 
-![Code analysis using gpt-4.5-preview-2025-02-27](images/2025-03-15-open-webui-and-open-ai/code-analysis.png)
+![Code analysis using gpt-4.5-preview-2025-02-27](/images/2025-03-15-open-webui-and-openai/code-analysis.png)
 
 
