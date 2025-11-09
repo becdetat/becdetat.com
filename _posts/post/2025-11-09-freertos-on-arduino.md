@@ -1,4 +1,11 @@
-# FreeRTOS on Arduino
+---
+title: FreeRTOS on Arduino
+permalink: /freertos-on-arduino
+layout: post
+date: 2025-11-09
+category: post
+---
+
 This isn't a beginner's guide to Arduino development or FreeRTOS, it's me learning in the open and sharing my discoveries.
 
 [FreeRTOS](https://www.freertos.org/) is a full RTOS stack for "small" microprocessors. I haven't explored FreeRTOS at all, I'm just using a [fork of FreeRTOS for Arduino ATMEGA](https://github.com/feilipu/Arduino_FreeRTOS_Library).
