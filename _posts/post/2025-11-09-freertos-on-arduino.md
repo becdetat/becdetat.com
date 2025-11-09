@@ -21,18 +21,18 @@ avrdude: ser_open(): can't set com-state for "\\.\COM4" mega328p
 
 I ended up having to go into Device Manager, uninstalling the device, and removing the driver.
 
-![](/images/uninstall-device.png)
+![](/images/2025-11-09-freertos-on-arduino/uninstall-device.png)
 
 When I plugged the Nano back in, it was recognised but still didn't let me upload - it gave a different error though so that was progress. I had to set the Arduino IDE to use the "old" bootloader. I guess you get what you pay for.
 
-![](/images/select-bootloader.png)
+![](/images/2025-11-09-freertos-on-arduino//select-bootloader.png)
 
 Once this was done I was able to upload "Blink". This exact process might not work with your particular board but it did with mine. I think you've got to set the bootloader every time you open a new sketch.
 
 ## Installing and using FreeRTOS on Arduinos
 I followed [this guide](https://feilipu.me/2015/11/24/arduino_freertos/) by the developer of the ATMEGA FreeRTOS port, but I'll go through the steps below. I'm using version 2.3.6 of the Arduino IDE so it's a bit different to the guide. First install the library using the library manager in the Arduino IDE.
 
-![](/images/install-freertos.png)
+![](/images/2025-11-09-freertos-on-arduino//install-freertos.png)
 
 The "Blink" sketch becomes:
 ```cpp
@@ -104,7 +104,7 @@ void setup() {
 
 So now we've got two "animations" happening, seemingly independently of each other. To do that in a traditional "single-threaded" loop requires a whole heap of extra code for state management and counting milliseconds.
 
-![](/images/blink-and-fade.gif)
+![](/images/2025-11-09-freertos-on-arduino//blink-and-fade.gif)
 
 
 
