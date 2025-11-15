@@ -9,6 +9,7 @@ category: post
 The Arduino IDE is ok, but it doesn't really compare to using VS Code. So I'm going to try to set up PlatformIO to bring my embedded development into an IDE that I'm familiar with. And also happens to have Github Copilot integration...
 
 First I installed the **PlatformIO IDE** extension.
+
 ![Install PlatformIO IDE extension](/images/2025-11-15-arduino-development-using-platformio-in-vs-code/install-platformio-extension.png)
 
 This adds a cool new icon for PlatformIO IDE. I clicked that and it _actually_ installed PlatformIO. When that completed, it prompted me to restart VS Code. Now the PlatformIO IDE is actually installed. To create a new project, I had to click "Open" then "New Project".
