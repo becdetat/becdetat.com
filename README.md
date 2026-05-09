@@ -2,10 +2,15 @@
 
 Rebecca Scott's Blog - <https://becdetat.com>
 
-## Setup
+## Running the site locally
 
-1. Have you any Docker? Man?
-2. Run it: `./build-and-watch.sh`
+```sh
+docker build -t becdetatcom .
+docker compose up -d
+```
+
+Then open <http://localhost:4050>.
+
 
 
 
