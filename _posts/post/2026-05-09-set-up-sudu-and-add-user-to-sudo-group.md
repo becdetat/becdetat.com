@@ -6,7 +6,7 @@ date: 2026-05-09
 category: post
 ---
 
-Debian doesn't have `sudo` so it will need to be installed as well.
+Debian doesn't have `sudo` by default so it will need to be installed manually.
 
 Open a `su` session, install `sudo`, and add the required user to the `sudo` group:
 
